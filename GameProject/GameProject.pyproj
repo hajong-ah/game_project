@@ -1,0 +1,129 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>38b2801a-81eb-43ba-8aa2-3929644cbbdc</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>main.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>GameProject</Name>
+    <RootNamespace>GameProject</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="constants.py" />
+    <Compile Include="entities.py" />
+    <Compile Include="game_core.py" />
+    <Compile Include="main.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="image\" />
+    <Folder Include="sound\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitnore" />
+    <Content Include="image\boss.png" />
+    <Content Include="image\boss_proj1.png" />
+    <Content Include="image\boss_proj2.png" />
+    <Content Include="image\boss_proj3.png" />
+    <Content Include="image\boss_proj4.png" />
+    <Content Include="image\boss_proj5.png" />
+    <Content Include="image\enemy0.png" />
+    <Content Include="image\enemy1.png" />
+    <Content Include="image\enemy2.png" />
+    <Content Include="image\enemy3.png" />
+    <Content Include="image\freischutz_attack1_left.png" />
+    <Content Include="image\freischutz_attack1_right.png" />
+    <Content Include="image\freischutz_attack2_left.png" />
+    <Content Include="image\freischutz_attack2_right.png" />
+    <Content Include="image\freischutz_attack3_left.png" />
+    <Content Include="image\freischutz_attack3_right.png" />
+    <Content Include="image\freischutz_idle_left.png" />
+    <Content Include="image\freischutz_idle_right.png" />
+    <Content Include="image\freischutz_jump_fall_left.png" />
+    <Content Include="image\freischutz_jump_fall_right.png" />
+    <Content Include="image\freischutz_jump_prep_left.png" />
+    <Content Include="image\freischutz_jump_prep_right.png" />
+    <Content Include="image\freischutz_jump_rise_left.png" />
+    <Content Include="image\freischutz_jump_rise_right.png" />
+    <Content Include="image\freischutz_skill_left.gif" />
+    <Content Include="image\freischutz_skill_right.gif" />
+    <Content Include="image\freischutz_walk_left.gif" />
+    <Content Include="image\freischutz_walk_right.gif" />
+    <Content Include="image\iron_attack_left.gif" />
+    <Content Include="image\iron_attack_right.gif" />
+    <Content Include="image\iron_idle_left.gif" />
+    <Content Include="image\iron_idle_right.gif" />
+    <Content Include="image\iron_jump_fall_left.png" />
+    <Content Include="image\iron_jump_fall_right.png" />
+    <Content Include="image\iron_jump_prep_left.png" />
+    <Content Include="image\iron_jump_prep_right.png" />
+    <Content Include="image\iron_jump_rise_left.png" />
+    <Content Include="image\iron_jump_rise_right.png" />
+    <Content Include="image\iron_walk_left.gif" />
+    <Content Include="image\iron_walk_right.gif" />
+    <Content Include="image\stranger_attack_left.gif" />
+    <Content Include="image\stranger_attack_right.gif" />
+    <Content Include="image\stranger_beam_left.png" />
+    <Content Include="image\stranger_beam_right.png" />
+    <Content Include="image\stranger_cast_left.gif" />
+    <Content Include="image\stranger_cast_right.gif" />
+    <Content Include="image\stranger_idle_left.png" />
+    <Content Include="image\stranger_idle_right.png" />
+    <Content Include="image\stranger_jump_fall_left.png" />
+    <Content Include="image\stranger_jump_fall_right.png" />
+    <Content Include="image\stranger_jump_prep_left.png" />
+    <Content Include="image\stranger_jump_prep_right.png" />
+    <Content Include="image\stranger_jump_rise_left.png" />
+    <Content Include="image\stranger_jump_rise_right.png" />
+    <Content Include="image\strider_attack_left.gif" />
+    <Content Include="image\strider_attack_right.gif" />
+    <Content Include="image\strider_dash_left.gif" />
+    <Content Include="image\strider_dash_right.gif" />
+    <Content Include="image\strider_idle_left.png" />
+    <Content Include="image\strider_idle_right.png" />
+    <Content Include="image\strider_jump_air_left.png" />
+    <Content Include="image\strider_jump_air_right.png" />
+    <Content Include="image\strider_jump_land_left.png" />
+    <Content Include="image\strider_jump_land_right.png" />
+    <Content Include="image\strider_jump_prep_left.png" />
+    <Content Include="image\strider_jump_prep_right.png" />
+    <Content Include="image\tile_box.png" />
+    <Content Include="image\tile_hidden.png" />
+    <Content Include="image\tile_open.png" />
+    <Content Include="image\tile_stage0.png" />
+    <Content Include="image\tile_stage1.png" />
+    <Content Include="image\tile_stage2.png" />
+    <Content Include="image\tile_stage3.png" />
+    <Content Include="image\tile_stage_end.png" />
+    <Content Include="sound\bgm_main.wav" />
+    <Content Include="sound\boss_projectile.wav" />
+    <Content Include="sound\freischutz_attack.wav" />
+    <Content Include="sound\freischutz_skill.wav" />
+    <Content Include="sound\iron_attack.wav" />
+    <Content Include="sound\iron_walk.wav" />
+    <Content Include="sound\stranger_attack.wav" />
+    <Content Include="sound\stranger_plasma.wav" />
+    <Content Include="sound\strider_attack.wav" />
+    <Content Include="sound\strider_dash.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
